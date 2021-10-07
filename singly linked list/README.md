@@ -15,7 +15,7 @@
 
 ---
 ## To Use
-Create a new Linked list object and use insertEnd() to add all needed data to the Linked List
+Create a new LinkedList object and use insertEnd() to add all needed data to the Linked List
 
 ## To Compile
 On the commandline enter
