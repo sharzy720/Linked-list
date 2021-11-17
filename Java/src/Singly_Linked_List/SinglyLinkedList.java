@@ -49,7 +49,7 @@ public class SinglyLinkedList<T> {
     }
 
     /**
-     *
+     * Styles the list for printing
      * @return Stylized version of data in linked list
      */
     public String toString() {
