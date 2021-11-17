@@ -5,17 +5,16 @@
 ---
 
 #### Included methods:
-* insertEnd()
+* add()
+* delete()
 
 #### Methods to be added:
-* removeEnd()
-* toString()
 * removeFromPosition()
 * insertAtPosition()
 
 ---
 ## To Use
-Create a new LinkedList object and use insertEnd() to add all needed data to the Linked List
+Create a new SinglyLinkedList object and use add() to add insert items to the end of the list
 
 ## To Compile
 On the commandline enter

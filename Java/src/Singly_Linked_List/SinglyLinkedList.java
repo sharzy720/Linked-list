@@ -1,15 +1,17 @@
+package Singly_Linked_List;
+
 /**
  * A linked list that holds generic nodes
  * @param <T>
  */
-public class LinkedList<T> {
+public class SinglyLinkedList<T> {
     private Node head;
     private Node tail;
 
     /**
-     * Constructor to create an empty LinkedList
+     * Constructor to create an empty test.LinkedList
      */
-    public LinkedList() {
+    public SinglyLinkedList() {
         this.head = null;
         this.tail = null;
     }
@@ -18,7 +20,7 @@ public class LinkedList<T> {
      * Adds a new node at the end of the linked list
      * @param data Value that the new node will hold
      */
-    private void add(T data) {
+    public void add(T data) {
         Node newNode = new Node(data);
         if (this.head == null) {
             this.head = newNode;
@@ -32,12 +34,13 @@ public class LinkedList<T> {
      * Deletes node that contains given data
      * @param data Data to search list for
      */
-    private void delete(T data) {
+    public void delete(T data) {
         Node current = this.head;
         Node prev = current;
         while (current != null) {
             if (current.data == data) {
                 prev.next = current.next;
+                break;
             } else {
                 prev = current;
                 current = current.next;
@@ -46,10 +49,24 @@ public class LinkedList<T> {
     }
 
     /**
+     *
+     * @return Stylized version of data in linked list
+     */
+    public String toString() {
+        StringBuilder printout = new StringBuilder();
+        Node current = this.head;
+        while (current != null) {
+            printout.append(" ").append(current.data);
+            current = current.next;
+        }
+        return printout.toString();
+    }
+
+    /**
      * Creates generic nodes for the linked list
      */
     private class Node {
-        private T data;
+        private final T data;
         private Node next;
 
         /**
