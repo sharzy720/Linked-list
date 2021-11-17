@@ -15,10 +15,10 @@ public class LinkedList<T> {
     }
 
     /**
-     * Inserts a new node at the end of the linked list
+     * Adds a new node at the end of the linked list
      * @param data Value that the new node will hold
      */
-    private void insertEnd(T data) {
+    private void add(T data) {
         Node newNode = new Node(data);
         if (this.head == null) {
             this.head = newNode;
