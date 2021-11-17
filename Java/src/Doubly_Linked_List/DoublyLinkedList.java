@@ -1,7 +1,5 @@
 package Doubly_Linked_List;
 
-import Singly_Linked_List.SinglyLinkedList;
-
 /**
  * A linked list that holds generic nodes
  * @param <T>
@@ -9,6 +7,7 @@ import Singly_Linked_List.SinglyLinkedList;
 public class DoublyLinkedList<T> {
     private Node head;
     private Node tail;
+    private int size;
 
     /**
      * Constructor to create an empty test.LinkedList
@@ -31,6 +30,24 @@ public class DoublyLinkedList<T> {
             this.tail.next = newNode;
         }
         this.tail = newNode;
+        this.size++;
+    }
+
+    /**
+     * Insert at a given index
+     * @param index Place to insert data
+     * @param data Data to be inserted
+     */
+    public void insertAtIndex(int index, T data) {
+        Node newNode = new Node(data);
+        Node current = this.head;
+        for (int i = 1; i < index; i++) {
+            current = current.next;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+        newNode.prev = current;
+        this.size++;
     }
 
     /**
@@ -47,6 +64,20 @@ public class DoublyLinkedList<T> {
                 current = current.next;
             }
         }
+        this.size--;
+    }
+
+    /**
+     * Deletes node at a given index
+     * @param index Place to remove Node
+     */
+    public void deleteAtIndex(int index) {
+        Node current = this.head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.prev.next = current.next;
+        this.size--;
     }
 
     /**
@@ -62,6 +93,15 @@ public class DoublyLinkedList<T> {
         }
         return printout.toString();
     }
+
+    /**
+     * Get the size of the linked list
+     * @return Size of list
+     */
+    public int getSize() {
+        return this.size;
+    }
+
     /**
      * Creates generic nodes for the linked list
      */
@@ -81,5 +121,3 @@ public class DoublyLinkedList<T> {
         }
     }
 }
-
-

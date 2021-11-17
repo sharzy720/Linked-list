@@ -7,6 +7,7 @@ package Singly_Linked_List;
 public class SinglyLinkedList<T> {
     private Node head;
     private Node tail;
+    private int size;
 
     /**
      * Constructor to create an empty test.LinkedList
@@ -28,6 +29,23 @@ public class SinglyLinkedList<T> {
             this.tail.next = newNode;
         }
         this.tail = newNode;
+        this.size++;
+    }
+
+    /**
+     * Insert at a given index
+     * @param index Place to insert data
+     * @param data Data to be inserted
+     */
+    public void insertAtIndex(int index, T data) {
+        Node newNode = new Node(data);
+        Node current = this.head;
+        for (int i = 1; i < index; i++) {
+            current = current.next;
+        }
+        newNode.next = current.next;
+        current.next = newNode;
+        this.size++;
     }
 
     /**
@@ -46,6 +64,22 @@ public class SinglyLinkedList<T> {
                 current = current.next;
             }
         }
+        this.size--;
+    }
+
+    /**
+     * Deletes node at a given index
+     * @param index Place to remove Node
+     */
+    public void deleteAtIndex(int index) {
+        Node current = this.head;
+        Node prev = current;
+        for (int i = 0; i < index; i++) {
+            prev = current;
+            current = current.next;
+        }
+        prev.next = current.next;
+        this.size--;
     }
 
     /**
@@ -60,6 +94,14 @@ public class SinglyLinkedList<T> {
             current = current.next;
         }
         return printout.toString();
+    }
+
+    /**
+     * Get the size of the linked list
+     * @return Size of list
+     */
+    public int getSize() {
+        return this.size;
     }
 
     /**
@@ -79,5 +121,3 @@ public class SinglyLinkedList<T> {
         }
     }
 }
-
-
