@@ -1,8 +1,10 @@
-package Singly_Linked_List;
+package Doubly_Linked_List;
 
-public class Tester {
+import Singly_Linked_List.SinglyLinkedList;
+
+public class DLLDriver {
     public static void main(String[] args) {
-        SinglyLinkedList<Integer> linkedList = new SinglyLinkedList<>();
+        DoublyLinkedList<Integer> linkedList = new DoublyLinkedList<>();
         linkedList.add(1);
         linkedList.add(2);
         linkedList.add(3);
