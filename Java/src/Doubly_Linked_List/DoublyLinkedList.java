@@ -1,15 +1,17 @@
+package Doubly_Linked_List;
+
 /**
  * A linked list that holds generic nodes
  * @param <T>
  */
-public class LinkedList<T> {
+public class DoublyLinkedList<T> {
     private Node head;
     private Node tail;
 
     /**
-     * Constructor to create an empty LinkedList
+     * Constructor to create an empty test.LinkedList
      */
-    public LinkedList() {
+    public DoublyLinkedList() {
         this.head = null;
         this.tail = null;
     }
