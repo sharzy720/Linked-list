@@ -1,7 +1,8 @@
 package Doubly_Linked_List;
 
-import Singly_Linked_List.SinglyLinkedList;
-
+/**
+ * Driver for DoublyLinkedList
+ */
 public class DLLDriver {
     public static void main(String[] args) {
         DoublyLinkedList<Integer> linkedList = new DoublyLinkedList<>();
