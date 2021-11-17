@@ -7,10 +7,10 @@
 #### Included methods:
 * add()
 * delete()
-
-#### Methods to be added:
 * removeFromPosition()
 * insertAtPosition()
+
+#### Methods to be added:
 
 ---
 ## To Use
