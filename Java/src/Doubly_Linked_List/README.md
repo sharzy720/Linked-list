@@ -5,11 +5,10 @@
 ---
 
 #### Included methods:
-
-
-#### Methods to be added:
 * add()
 * delete()
+
+#### Methods to be added:
 * removeFromPosition()
 * insertAtPosition()
 
