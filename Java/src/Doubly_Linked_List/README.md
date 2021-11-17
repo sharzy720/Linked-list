@@ -20,4 +20,4 @@ Create a new DoublyLinkedList object and use add() to add insert items to the en
 ## To Compile
 On the commandline enter
 
-    javac linkedList.java
+    javac DoublyLinkedList.java
