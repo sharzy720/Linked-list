@@ -29,6 +29,23 @@ public class LinkedList<T> {
     }
 
     /**
+     * Deletes node that contains given data
+     * @param data Data to search list for
+     */
+    private void delete(T data) {
+        Node current = this.head;
+        Node prev = current;
+        while (current != null) {
+            if (current.data == data) {
+                prev.next = current.next;
+            } else {
+                prev = current;
+                current = current.next;
+            }
+        }
+    }
+
+    /**
      * Creates generic nodes for the linked list
      */
     private class Node {
