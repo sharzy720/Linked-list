@@ -5,13 +5,13 @@
 ---
 
 #### Included methods:
-
-
-#### Methods to be added:
 * add()
 * delete()
-* removeFromPosition()
-* insertAtPosition()
+* deleteAtIndex()
+* insertAtIndex()
+* toString()
+
+#### Methods to be added:
 
 ---
 ## To Use
