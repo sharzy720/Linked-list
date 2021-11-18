@@ -11,3 +11,4 @@
 * [Doubly Linked List](https://github.com/sharzy720/Linked-list/tree/master/Java/src/Doubly_Linked_List)
 
 ### Python
+* [Doubly/Singly Linked List](https://github.com/sharzy720/Linked-list/tree/master/Python)
