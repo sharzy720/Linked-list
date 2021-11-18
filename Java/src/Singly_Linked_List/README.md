@@ -9,6 +9,7 @@
 * delete()
 * deleteAtIndex()
 * insertAtIndex()
+* toString()
 
 #### Methods to be added:
 
